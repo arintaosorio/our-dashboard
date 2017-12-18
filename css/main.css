@@ -4,9 +4,7 @@ body {
 	background-color: gray;
 }
 
-body, html {
-	height: 100%;
-}
+
 nav{
 	width: 100%;
 }
@@ -19,9 +17,12 @@ select{
      padding: 5px;
      width: 200px;
      margin-top: 0;
+     font-family: 'Montserrat', sans-serif;
 }
 h1{
 	height: 10px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 hr{
 	background-color: #FFC107;
@@ -54,6 +55,8 @@ hr{
 	height: 40px;
 	display: inline-block;	
 	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
 }
 
 #location-menu > div{	
@@ -64,20 +67,19 @@ hr{
 	height: 25px;
 	width: 200px;
 	margin-bottom: 0;
-
+	font-family: 'Montserrat', sans-serif;
 }
 
 #section-left {
+	height: 100%;
 	width: 20%;
-	height: 80%;
 	background-color: #ECEBEB;
 	display: inline-block;
 	float: left;
-	height: 100%;
+	
 }
 #section-right {
 	width: 80%;
-	height: 80%;
 	background-color: #ffffff;
 	display: inline-block;
 	float: left;
@@ -85,21 +87,25 @@ hr{
 }
 
 #data{
-	width: 200px;
-	height: 200px;
-	margin:15px;
-	background-color: grey;
+	width: 300px;
+	height: 300px;
+	margin:15px;	
 	float: left;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 14pt;
+
 }
+
 #dataBig{
-	width: 200px;
-	height: 600px	;
+	width: 300px;
+	height: 900px	;
 	background-color: grey;
 	float: left;
 }
 
 
 #overview{
-	width: 70%;
+	width: 100%;
 }
 
