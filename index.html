@@ -10,7 +10,6 @@
 <!--inicio barra principal-->
     <nav>
       <div id="logo">
-<!--Aquí va el logo, pero puse un p para ubicar el espacio-->
        <img src="assets/images/logo-laboratoria.svg">
       </div>
       <div id="data-dashboard">
@@ -24,19 +23,18 @@
     <div id="location-menu">
         <div>
           <p>SEDE</p>
-        <select id="SEDE" onchange ="seleccionarOpcion(event)">
-            <option >Selecciona una sede </option>
+         <select id="sede" name="#">
+             <option >Selecciona una sede </option>
             <option value = "sdc" data-sede="santiago" data-generacion ="2016-2">Santiago de Chile - 2016-2 </option>
             <option value = "sdc" data-sede="santiago" data-generacion ="2017-1">Santiago de Chile - 2017-1 </option>
             <option value = "sdc" data-sede="santiago" data-generacion ="2017-2">Santiago de Chile - 2017-2 </option>
-            <option value = "arq" data-sede="arequipa" data-generacion ="2016-1">Arequipa - 2016-1</option>
-            <option value = "arq" data-sede="arequipa" data-generacion ="2017-2">Arequipa - 2017-2</option>
+            <option value = "arq" data-sede="arequipa" data-generacion ="2016-2">Arequipa - 2016-2</option>
+            <option value = "arq" data-sede="arequipa" data-generacion ="2017-1">Arequipa - 2017-1</option>
             <option value = "lim" data-sede="lima" data-generacion ="2016-1">Lima - 2016-1</option>
             <option value = "lim" data-sede="lima" data-generacion ="2017-1">Lima - 2017-1</option>
             <option value = "lim" data-sede="lima" data-generacion ="2017-2">Lima - 2017-2</option>
             <option value = "mex" data-sede="mexico" data-generacion ="2016-2">México - 2016-2</option>
-            <option value = "mex" data-sede="mexico" data-generacion ="2017-1">México - 2017-1</option>
-            <option value = "mex" data-sede="mexico" data-generacion ="2017-2">México - 2017-2</option>
+            <option value = "mex" data-sede="mexico" data-generacion ="2017-1">México - 2017-1</option> 
         </select> 
         </div>
     </div>
@@ -91,8 +89,8 @@
      </section>
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-		<!--Base de datos-->
-		<script src="./js/data.js"></script>
+    <!--Base de datos-->
+    <script src="./js/data.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

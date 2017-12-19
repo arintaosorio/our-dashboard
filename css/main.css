@@ -35,7 +35,7 @@ hr{
 
 #logo {
 	width: 20%;
-	height: 40px;
+	height:50px;
 	background-color: white;
 	display: inline-block;
 	float: left;
@@ -45,18 +45,19 @@ hr{
 	width: 150px;
 	margin-left: 50px;
 	float: left;
-	height: 40px;
+	height: 50px;
 }
 
 
 #data-dashboard {
 	background-color: #FFC107;
 	width: 80%;
-	height: 40px;
+	height: 50px;
 	display: inline-block;	
 	float: left;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2em;
+	font-weight: bold;
+	font-size: 20pt;
 }
 
 #location-menu > div{	
