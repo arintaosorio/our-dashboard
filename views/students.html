@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
 <!--inicio barra principal-->
     <nav>
       <div id="logo">
-       <img src="assets/images/logo-laboratoria.svg">
+       <img src="../assets/images/logo-laboratoria.svg">
       </div>
       <div id="data-dashboard">
         <p id="main-title">DATA DASHBOARD</p>
@@ -45,51 +45,36 @@
     </section>
 
     <!--sección derecha -->
-      <section id="section-right">
-      <p> <b>OVERVIEW</b></p>
-      <p ><a href="views/students.html">STUDENTS</a>  </p>      
+     <!--menu overview y students--> 
+     <section id="section-right">
+      <p> <a href="../index.html"><b>OVERVIEW</b></a></p>
+      <p ><a href="students.html">STUDENTS</a>  </p>      
       <hr>
-      <div id="overview"> 
+
+      <!--DATA-->
+      <div id="students"> 
         <div id="data">
-          <img src="assets/images/icono_est.svg" style="width:150px;height:150px">
-             <h2>TOTAL ESTUDIANTES</h2>
-             <div id="desercion">
-              
-             <p> 24% Deserción</p>
-             </div>    
+          <img src="../assets/images/estname.jpg">
         </div>
         <div id="data">
-           <p>aqui va la data</p>
+          <img id="photo" src="../assets/images/Cristina-Canchola.JPG" style="width: 300px; height: 300px">
+               
         </div>
+        
         <div id="data">
            
         </div>
         <div id="data">
-          <h1> PUNTAJE TECH</h1>
-          <div id="curve_chart" style="width: 300px; height: 250px"></div>
-        </div>
-        <div id="data-circle">
-          <p class= "text-porc" id="students-tech" 80% </p>
-          <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
-          <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
-          <p class= "text-porc"> 80% </p>
+          <img src="../assets/images/estTECH.jpg">
           
-         
         </div>
         <div id="data">
-          <p>aqui va la data</p>
+         <img src="../assets/images/infoest.jpg">
         </div>
         <div id="data">
-          <h1> PUNTAJE HSE  </h1>
-           <div id="curve_chart2" style="width: 300px; height: 250px"></div>
-        </div>
-        <div id="data-circle">
-
-          <p>aqui va la data</p>
-        </div>
-        <div id="data">
-
-        </div>
+          <img src="../assets/images/estHSE.jpg">
+          </div>
+        
 
 
         
@@ -102,8 +87,8 @@
 
     <!--Base de datos-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="./js/data.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
 

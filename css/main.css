@@ -19,10 +19,7 @@ select{
      margin-top: 0;
      font-family: 'Montserrat', sans-serif;
 }
-h1{
-	height: 10px;
-	font-family: 'Montserrat', sans-serif;
-}
+
 h2{
 	height: 35px;
 	margin:0;
@@ -63,7 +60,10 @@ hr{
 	font-weight: bold;
 	font-size: 20pt;
 }
+#main-title{
+	margin:5px;
 
+}
 #location-menu > div{	
 	margin-left: 30px;
 }
@@ -90,13 +90,26 @@ hr{
 	float: left;
 	height: 100%
 }
+#section-right>p{
+	display: inline-block;
+	height: 10px;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 40px;
+	margin-left: 10px;
+}
+#section-right>p>a{
+	text-decoration: none;	
+	color:black;
+}
 #desercion{
 	height: 50px;
 	background-image: url(../assets/images/icono_des.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+#desercion>p{
+	margin-top: 10px;
+}
 #data{
 	width: 300px;
 	height: 300px;
@@ -151,3 +164,6 @@ hr{
 	width: 100%;
 }
 
+#photo{
+	border-radius: 50%
+}
