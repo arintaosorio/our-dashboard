@@ -19,11 +19,19 @@ select{
      margin-top: 0;
      font-family: 'Montserrat', sans-serif;
 }
-
-h2{
-	height: 35px;
+h1{
+	text-align: center;
 	margin:0;
-	margin-top: 15px;
+	font-weight: 700;
+	font-size: 25px;
+
+}
+h2{
+	text-align: left;
+	margin:0;
+	font-weight: 700;
+	font-size: 25px;
+
 }
 hr{
 	background-color: #FFC107;
@@ -101,6 +109,11 @@ hr{
 	text-decoration: none;	
 	color:black;
 }
+#totalShow{
+	margin: 0;
+	font-weight: bold;
+	font-size: 20px
+}
 #desercion{
 	height: 50px;
 	background-image: url(../assets/images/icono_des.svg);
@@ -108,7 +121,8 @@ hr{
 	background-position: center;
 }
 #desercion>p{
-	margin-top: 10px;
+	margin-top: 5px;
+	padding-top: 15px;
 }
 #data{
 	width: 300px;
@@ -129,6 +143,9 @@ hr{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	font-size: 14pt;
+	background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .text-fijo {
     color: white;
@@ -150,6 +167,7 @@ hr{
     font-weight: bold;
     text-align: center;
     font-size: 30pt;
+    margin: 0;
 }
 
 #dataBig{

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
   <body>
 <!--inicio barra principal-->
@@ -52,24 +52,29 @@
       <div id="overview"> 
         <div id="data">
           <img src="assets/images/icono_est.svg" style="width:150px;height:150px">
-             <h2>TOTAL ESTUDIANTES</h2>
+          <p id="totalShow"></p>
+             <h1>TOTAL ESTUDIANTES</h1>
              <div id="desercion">
               
              <p> 24% Deserción</p>
              </div>    
         </div>
-        <div id="data">
-           <p>aqui va la data</p>
+        <div id="data"> 
+          <h2> NET PROMOTER SCORE</h2>
+           <img alt="dummy grafica" src="assets/images/nps.jpg">
         </div>
         <div id="data">
-           
+          <h2>ALUMNAS SATISFECHAS</h2>
+           <img alt="dummy grafica" src="assets/images/satisfaction.jpg" style="width: 200px; height: 200px" >
         </div>
         <div id="data">
-          <h1> PUNTAJE TECH</h1>
-          <div id="curve_chart" style="width: 300px; height: 250px"></div>
+          <h2> PUNTAJE TECH</h2>
+          <div id="curve_chart" style="width: 300px; height: 200px margin:auto"></div>
+ <p id="promTechShow">PROMEDIO TECH</p>
         </div>
         <div id="data-circle">
-          <p class= "text-porc" id="students-tech" 80% </p>
+          <h2>ACHIEVEMENT</h2>
+          <p class= "text-porc" id="students-tech" 80% ></p>
           <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
           <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
           <p class= "text-porc"> 80% </p>
@@ -77,17 +82,27 @@
          
         </div>
         <div id="data">
-          <p>aqui va la data</p>
+          <h2>TEACHERS</h2>
+        <img alt="dummy grafica" src="assets/images/ratings.jpg">
         </div>
         <div id="data">
-          <h1> PUNTAJE HSE  </h1>
-           <div id="curve_chart2" style="width: 300px; height: 250px"></div>
+          <h2> PUNTAJE HSE  </h2>
+           <div id="curve_chart2" style="width: 30 0px; height: 200px"></div>
+         
+                 <p id="promHseShow">PROMEDIO HSE</p>
         </div>
         <div id="data-circle">
-
-          <p>aqui va la data</p>
+        
+          <p class= "text-porc" id="students-tech">80% </p>
+          <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
+          <p class= "text-fijo"> Estudiantes que alcanzaron la meta</p>
+          <p class= "text-porc"> 80% </p>
+          
+         
         </div>
         <div id="data">
+          <h2>JEDIS</h2>
+          <img alt="dummy grafica" src="assets/images/ratings.jpg">
 
         </div>
 

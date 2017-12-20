@@ -3,7 +3,6 @@
 Aidé Iyali Marquez Lago
 Arinta Osorio Valladares
 Cristina Nayelli Canchola Lara
-
    ```
 # Data Dashboard
 
@@ -78,6 +77,7 @@ de mayor relevancia para el cliente y los elementos dinámicos.
 ## Sketch
 
 ![Sketch](assets/images/sketch.jpg)
+![Sketch](assets/images/sketch-alumnas.jpg)
 
 ## Tipografía
 ![Tipografía](assets/images/typo.jpg)

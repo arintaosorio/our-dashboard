@@ -22,6 +22,38 @@
 
         chart.draw(data, options);
       }
+
+
+
+
+
+      //chart nps
+      /*google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      } */
+
+
+
+
 /*
  * Funcionalidad de tu producto
  */
@@ -37,36 +69,25 @@ function clicOpcion() {
  	// console.log( "Generacion selecionada "+ generation)
  	var totalStudents = data[sedes][generation]["students"].length;
  	var totalStudents2 = data[sedes][generation]["students"];
- 	var dataRatings = data[sedes][generation]["ratings"]
  	// console.log("Estudiantes selecionadas "+ totalStudents)
 
  	var totalStudentsRatings = data[sedes][generation]["ratings"].length;
-
  	// console.log("Ratings selecionados " + totalStudentsRatings)
  	// console.log(totalStudentsGlobal);
  
-
-  
-
 console.log("Estudiantes totales " + totalStudents)
-//var studentsNum = generationG.students
-// var totalStudentsSede = 0;
+
+var totalStudentsShow = document.getElementById("totalShow");
+totalStudentsShow.textContent=totalStudents;
 var activas = 0; // Total general
 var inActivas = 0;
-// var totalHyT7 = 0;
 var porcentajeActivos = 0;
 var porcentajeInactivos = 0;
 var promTotalH = 0;
 var promTotalT = 0;
-var totalGenSede =  0;
-var totalGenSedeH =  0;
-var totalGenSedeT =  0;
 
 
 //Para que cuente cuantas alumnas hay en lista
-
-// totalStudentsSede = Object.keys(totalStudents);
-//console.log("El total de alumnas es " + totalStudentsSede)
 
 for (var i = 0; i < totalStudents; i++ ) {
 var alumnActiva = data[sedes][generation].students[i].active;
@@ -82,36 +103,54 @@ var alumnActiva = data[sedes][generation].students[i].active;
 	}
 
 console.log("Alumnas Activas "+ activas)
+
+var totalActivasShow = document.getElementById("activasShow");
+//	totalActivasShow.textContent=activas;
+
 console.log("Alumnas Inactivas "+ inActivas)
+var totalInactivasShow = document.getElementById("inActivasShow");
+//totalInactivasShow.textContent=inActivas;
+
 porcentajeActivos = ((activas / totalStudents) * 100).toFixed(1);
 porcentajeInactivos = ((inActivas / totalStudents) * 100).toFixed(1);
 
 console.log("Porcentaje de Activas " + porcentajeActivos)
-console.log("Porcentaje de Inactivas " + porcentajeInactivos)
+var totalActivasShow = document.getElementById("porActivasShow");
+//totalActivasShow.textContent=porcentajeActivos;
 
+console.log("Porcentaje de Inactivas " + porcentajeInactivos)
+var porcentajeInactivasShow = document.getElementById("porInActivasShow");
+//porcentajeInactivasShow.textContent=porcentajeInactivos;
 
 for (var i = 0; i < totalStudents; i++ ) {
 	var totalH = 0;
 	var totalT = 0;
 	
 
-if (totalStudents2[i].active === true){
-	 for (var j = 0; j < totalStudents2[i]["sprints"].length; j++){
+	if (totalStudents2[i].active === true){
+		 for (var j = 0; j < totalStudents2[i]["sprints"].length; j++){
 
-	 	//console.log("tamaño"+ studentsNum[i]["sprints"].length);
-	 totalH += totalStudents2[i]["sprints"][j]["score"]["hse"];
-	 totalT += totalStudents2[i]["sprints"][j]["score"]["tech"];
-	 }
-	promTotalH = totalH / totalStudents2[i]["sprints"].length;
-	promTotalT = totalT / totalStudents2[i]["sprints"].length;
+		 	//console.log("tamaño"+ studentsNum[i]["sprints"].length);
+		 totalH += totalStudents2[i]["sprints"][j]["score"]["hse"];
+		 totalT += totalStudents2[i]["sprints"][j]["score"]["tech"];
+		 }
+		promTotalH = totalH / totalStudents2[i]["sprints"].length;
+		promTotalT = totalT / totalStudents2[i]["sprints"].length;
 
 
-	 }
+		 }
 
 
 }
 console.log("Promedio total en HSE " + promTotalH);
+var promHseShow = document.getElementById("promHseShow");
+promHseShow.textContent=promTotalH;
+
 console.log("Promedio total en TECH " + promTotalT);
+var promTechShow = document.getElementById("promTechShow");
+promTechShow.textContent=promTotalT;
+
+
 
   
 
@@ -132,16 +171,15 @@ console.log("Promedio total en TECH " + promTotalT);
 // // console.log(totalStudents)*/
 //función promedio teacher y jedis
 
-
- var sumTeacherRating = 0;
+var dataRatings = data[sede][generation]['ratings'];
+ var TeacherRating = 0;
 
     for (var i = 0; i < dataRatings.length; i++) {
-      sumTeacherRating += dataRatings[i]['teacher'];
+      TeacherRating += dataRatings[i]['teacher'];
     }
 
     
-    var teacherRating = document.getElementById('teacher-rating');
-    console.log("promedio Teachers"+sumTeacherRating)
+    console.log(TeacherRating)
 
   
     var jediRating = 0;
