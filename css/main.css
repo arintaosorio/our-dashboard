@@ -147,19 +147,25 @@ hr{
     background-repeat: no-repeat;
     background-position: center;
 }
+#info-text{
+	margin: auto auto;
+	height: 100%;
+	padding-top: 32px;
+	padding-left: 40px;
+}
+
 .text-fijo {
     color: white;
-    margin-left: 20px;
-    width: 120px;
+    width: 105px;
     height: 50px;
     float: left;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 10pt;
+    margin-bottom: 40px;
 }
 .text-porc {
     color: white;
-    margin-left: 20px;
     width: 120px;
     height: 50px;
     float: left;
@@ -168,6 +174,7 @@ hr{
     text-align: center;
     font-size: 30pt;
     margin: 0;
+      margin-bottom: 40px;
 }
 
 #dataBig{
