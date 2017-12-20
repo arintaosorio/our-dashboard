@@ -70,9 +70,14 @@ de mayor relevancia para el cliente y los elementos dinámicos.
         9.2. Realizar una función que permita mostrar en la segunda página, los datos de las alumnas por sede y generación.
 
 
-##MAQUETADO
+## MAQUETADO
+
 ![Maqueta](assets/images/maqueta.jpg)
 
 
-##Sketch
+## Sketch
+
 ![Sketch](assets/images/sketch.jpg)
+
+## Tipografía
+![Tipografía](assets/images/typo.jpg)
