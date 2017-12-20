@@ -62,4 +62,4 @@ de mayor relevancia para el cliente y los elementos dinámicos.
         9.1 Realizar un evento en el botton "estudiantes", contenido en el navegador de la página principal, para que al darle click, envíe a la página del punto anterior.
         9.2 Realizar una función que permita mostrar en la segunda página, los datos de las alumnas por sede y generación.
 
-![Maqueta](maqueta.jpg)
+![Maqueta](assets/images/maqueta.jpg)
