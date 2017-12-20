@@ -81,3 +81,6 @@ de mayor relevancia para el cliente y los elementos dinámicos.
 
 ## Tipografía
 ![Tipografía](assets/images/typo.jpg)
+
+## Paleta de colores
+![Paleta de colores](assets/images/paleta.jpg)
