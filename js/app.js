@@ -152,3 +152,24 @@ console.log("Promedio total en TECH " + promTotalT);
       console.log(jediRating)
 }
 }
+
+
+
+//funcion NPS
+    var cumple = 0;
+    var supera = 0;
+    for (i = 0; i < totalStudentsRatings2.length;i++) {
+      cumple += (totalStudentsRatings2[i]['student']['cumple']) / totalStudentsRatings2.length;
+      supera += (totalStudentsRatings2[i]['student']['supera']) / totalStudentsRatings2.length;
+console.log("Cumplen la meta " + (cumple).toFixed(1));
+console.log("Superan la meta " + (supera).toFixed(1));
+}
+ var promoters = 0 / totalStudents * 100;
+    var passives = 0 / totalStudents * 100;
+    var detractors = 0 / totalStudents * 100;
+    for (i = 0; i < totalStudentsRatings2.length; i++) {
+      promoters += (totalStudentsRatings2[i]['nps']['promoters']) / totalStudentsRatings2.length;
+      passives += (totalStudentsRatings2[i]['nps']['passive']) / totalStudentsRatings2.length;
+      detractors += (totalStudentsRatings2[i]['nps']['detractors']) / totalStudentsRatings2.length;
+console.log("NPS " + (promoters - detractors).toFixed(1) + " %");
+}
