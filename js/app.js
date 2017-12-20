@@ -144,7 +144,7 @@ for (var i = 0; i < totalStudents; i++ ) {
 }
 console.log("Promedio total en HSE " + promTotalH);
 var promHseShow = document.getElementById("promHseShow");
-promHseShow.textContent=promTotalH;
+promHseShow.textContent=(promTotalH+ "PROMEDIO HSE").toFixed(1);
 
 console.log("Promedio total en TECH " + promTotalT);
 var promTechShow = document.getElementById("promTechShow");
